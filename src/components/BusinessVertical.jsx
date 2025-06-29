@@ -55,7 +55,11 @@ const BusinessVertical = ({
                             : "opacity-0 transform translate-y-32 max-h-0 overflow-hidden"
                     }`}
                 >
-                    <div className="backdrop-blur-lg bg-white/10 rounded-3xl p-4 border border-white/20 shadow-2xl max-w-md mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-750">
+                    <div
+                        className={`backdrop-blur-lg bg-white/10 rounded-3xl p-4 border border-white/20 shadow-2xl max-w-md mx-auto transition-opacity duration-750 opacity-0 ${
+                            isHovered || isMobile ? "opacity-100" : "group-hover:opacity-100"
+                        }`}
+                    >
                         <div className="group cursor-pointer">
                             <div className="p-8">
                                 <p className="text-gray-200 mb-6 leading-relaxed">{description}</p>

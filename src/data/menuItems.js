@@ -1,3 +1,4 @@
+// src/data/menuItems.js
 const menuItems = [
     { href: "#about", label: "Hakkımızda" },
     { href: "#corporate", label: "Kurumsal" },

@@ -1,4 +1,6 @@
+// src/components/Preloader.jsx
 import { useState, useEffect } from "react";
+import mdGroupLogo from "../assets/logo/md-group-logo.svg";
 
 const Preloader = () => {
     const [logoOpacity, setLogoOpacity] = useState(0.2);
@@ -17,7 +19,7 @@ const Preloader = () => {
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
-            <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-cyan-900/20" />
+            <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-blue-50 via-cyan-100 to-sky-200" />
 
             <div className="relative z-10 text-center">
                 <div
@@ -28,9 +30,9 @@ const Preloader = () => {
                         filter: `blur(${isAnimating ? 0 : 4}px)`,
                     }}
                 >
-                    <h1 className="text-4xl font-bold tracking-wider text-white md:text-6xl">
-                        Group<span className="text-cyan-400">MD</span>
-                    </h1>
+                    <div className="w-xs md:w-sm">
+                        <img className="w-full" src={mdGroupLogo} alt="Grop MD Preloader Svg" />
+                    </div>
                 </div>
             </div>
         </div>

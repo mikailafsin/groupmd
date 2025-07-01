@@ -1,7 +1,10 @@
+// src/components/LandingPage.jsx
 import BusinessVertical from "./BusinessVertical";
 import MobileMenu from "./MobileMenu";
 import services from "../data/services";
 import menuItems from "../data/menuItems";
+import mdGroupLogo from "../assets/logo/md-group-logo.svg";
+import AboutSection from "./AboutSection";
 
 const LandingPage = () => {
     return (
@@ -41,11 +44,13 @@ const LandingPage = () => {
                 </div>
             </div>
 
+            <AboutSection />
+
             <div className="fixed top-8 left-8 z-50">
                 <div className="rounded-2xl border border-white/20 bg-white/10 px-6 py-3 backdrop-blur-md">
-                    <h1 className="text-2xl font-bold tracking-wider text-white">
-                        Group<span className="text-cyan-400">MD</span>
-                    </h1>
+                    <div className="w-24 md:w-28">
+                        <img className="w-full" src={mdGroupLogo} alt="Grop MD Preloader Svg" />
+                    </div>
                 </div>
             </div>
 

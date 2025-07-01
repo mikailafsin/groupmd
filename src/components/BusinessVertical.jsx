@@ -1,3 +1,4 @@
+// src/components/BusinessVertical.jsx
 import { useState } from "react";
 
 const BusinessVertical = ({

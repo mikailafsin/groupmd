@@ -1,3 +1,4 @@
+// src/components/MobileMenu.jsx
 import { useState } from "react";
 import menuItems from "../data/menuItems";
 

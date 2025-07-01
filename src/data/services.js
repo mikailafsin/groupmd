@@ -1,6 +1,7 @@
-import cyberVideo from "../assets/cyber.mp4";
-import eCommerceVideo from "../assets/e-commerce.mp4";
-import codingVideo from "../assets/coding.mp4";
+// src/data/services.js
+import cyberVideo from "../assets/hero-section/cyber.mp4";
+import eCommerceVideo from "../assets/hero-section/e-commerce.mp4";
+import codingVideo from "../assets/hero-section/coding.mp4";
 
 const services = [
     {

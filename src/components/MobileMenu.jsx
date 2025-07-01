@@ -8,7 +8,7 @@ const MobileMenu = () => {
     return (
         <div className="relative">
             <button onClick={toggleMenu} className="text-white focus:outline-none">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -19,13 +19,13 @@ const MobileMenu = () => {
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 mt-5 w-40 rounded-xl shadow-lg backdrop-blur-md bg-white/10 border border-white/20 py-2 z-50">
+                <div className="absolute right-0 z-50 mt-5 w-40 rounded-xl border border-white/20 bg-white/10 py-2 shadow-lg backdrop-blur-md">
                     {menuItems.map(({ href, label }) => (
                         <a
                             key={href}
                             href={href}
                             onClick={() => setIsOpen(false)}
-                            className="block px-4 py-2 text-sm text-white hover:text-cyan-400 transition-colors duration-300"
+                            className="block px-4 py-2 text-sm text-white transition-colors duration-300 hover:text-cyan-400"
                         >
                             {label}
                         </a>

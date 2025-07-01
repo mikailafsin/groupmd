@@ -5,19 +5,19 @@ import menuItems from "../data/menuItems";
 
 const LandingPage = () => {
     return (
-        <div className="min-h-screen bg-black relative">
-            <div className="hidden lg:flex h-screen">
+        <div className="relative min-h-screen bg-black">
+            <div className="hidden h-screen lg:flex">
                 {services.map((service) => (
                     <BusinessVertical key={service.id} {...service} className="flex-1" />
                 ))}
 
                 <div className="fixed top-8 right-8 z-50">
-                    <div className="flex items-center space-x-4 backdrop-blur-md bg-white/10 rounded-2xl px-6 py-3 border border-white/20">
+                    <div className="flex items-center space-x-4 rounded-2xl border border-white/20 bg-white/10 px-6 py-3 backdrop-blur-md">
                         {menuItems.map(({ href, label }) => (
                             <a
                                 key={href}
                                 href={href}
-                                className="text-white text-sm font-semibold hover:text-cyan-400 transition-colors duration-300"
+                                className="text-sm font-semibold text-white transition-colors duration-300 hover:text-cyan-400"
                             >
                                 {label}
                             </a>
@@ -36,22 +36,22 @@ const LandingPage = () => {
                     />
                 ))}
 
-                <div className="fixed top-8 right-4 z-50 flex items-center justify-between backdrop-blur-md bg-white/10 rounded-2xl p-2.5 border border-white/20">
+                <div className="fixed top-8 right-4 z-50 flex items-center justify-between rounded-2xl border border-white/20 bg-white/10 p-2.5 backdrop-blur-md">
                     <MobileMenu />
                 </div>
             </div>
 
             <div className="fixed top-8 left-8 z-50">
-                <div className="backdrop-blur-md bg-white/10 rounded-2xl px-6 py-3 border border-white/20">
-                    <h1 className="text-2xl font-bold text-white tracking-wider">
+                <div className="rounded-2xl border border-white/20 bg-white/10 px-6 py-3 backdrop-blur-md">
+                    <h1 className="text-2xl font-bold tracking-wider text-white">
                         Group<span className="text-cyan-400">MD</span>
                     </h1>
                 </div>
             </div>
 
-            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-                <div className="backdrop-blur-md bg-white/10 rounded-full px-4 py-2 border border-white/20">
-                    <p className="text-white/70 text-xs md:text-sm text-center font-bold">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 transform">
+                <div className="rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md">
+                    <p className="text-center text-xs font-bold text-white/70 md:text-sm">
                         2025 GroupMD. Tüm hakları saklıdır.
                     </p>
                 </div>

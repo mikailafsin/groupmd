@@ -24,8 +24,8 @@ function App() {
             <div
                 className={`transition-all duration-1000 ease-out ${
                     showMainContent
-                        ? "opacity-100 scale-100"
-                        : "opacity-0 scale-95 pointer-events-none"
+                        ? "scale-100 opacity-100"
+                        : "pointer-events-none scale-95 opacity-0"
                 }`}
             >
                 <LandingPage />
